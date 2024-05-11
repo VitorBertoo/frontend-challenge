@@ -1,0 +1,17 @@
+.cart-button {
+  display: flex;
+
+  width: 90px;
+  height: 45px;
+  border-radius: 8px;
+
+  align-items: center;
+  justify-content: space-between;
+
+  padding-left: 15px;
+  padding-right: 27px;
+
+  background-color: $secondary;
+  color: $secondaryText;
+  cursor: pointer;
+}

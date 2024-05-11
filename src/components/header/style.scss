@@ -1,0 +1,27 @@
+.header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  height: $headerHeight;
+  width: 100vw;
+
+  padding: 28px 65px;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: $primary;
+  color: $primaryText;
+
+  .title {
+    :first-child {
+      font-weight: 600;
+      font-size: 40px;
+      letter-spacing: 4px;
+    }
+
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 19px;
+    margin-top: auto;
+  }
+}
