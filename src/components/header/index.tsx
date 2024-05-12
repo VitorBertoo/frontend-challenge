@@ -1,3 +1,6 @@
+'use client';
+
+import { Cart } from '../cart';
 import CartButton from '../cartButton';
 import './style.scss';
 
@@ -9,6 +12,7 @@ export default function Header() {
         <span>Sistemas</span>
       </span>
       <CartButton />
+      <Cart />
     </div>
   );
 }

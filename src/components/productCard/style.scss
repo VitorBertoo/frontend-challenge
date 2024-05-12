@@ -17,6 +17,7 @@ $cardRadius: 12px;
     position: relative;
     width: 100%;
     height: 140px;
+    z-index: -1; /* Evita que a imagem apareça por cima de elementos absolutos */
 
     img {
       object-fit: contain;
