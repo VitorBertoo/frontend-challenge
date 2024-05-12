@@ -13,7 +13,11 @@ export default function CartButton() {
   });
 
   return (
-    <span className="cart-button" onClick={() => toggleOpen()}>
+    <span
+      className="cart-button"
+      data-testid="cart-button"
+      onClick={() => toggleOpen()}
+    >
       <Image priority src={cartIcon} alt="cart icon" />
       {totalItems}
     </span>

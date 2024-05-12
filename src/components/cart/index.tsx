@@ -40,7 +40,11 @@ export function Cart() {
       <div className="cart-body">
         <div className="cart-header">
           <span>Carrinho de compras</span>
-          <button className="close-button" onClick={() => toggleOpen()}>
+          <button
+            data-testid="cart-close-button"
+            className="close-button"
+            onClick={() => toggleOpen()}
+          >
             X
           </button>
         </div>
@@ -63,7 +67,9 @@ export function Cart() {
           <span>R${cartTotal}</span>
         </div>
       </div>
-      <button className="finish-order">Finalizar Compra</button>
+      <button data-testid="finish-order-button" className="finish-order">
+        Finalizar Compra
+      </button>
     </motion.div>
   );
 }
