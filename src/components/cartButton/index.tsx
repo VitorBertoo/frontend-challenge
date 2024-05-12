@@ -18,7 +18,7 @@ export default function CartButton() {
       data-testid="cart-button"
       onClick={() => toggleOpen()}
     >
-      <Image priority src={cartIcon} alt="cart icon" />
+      <Image src={cartIcon} alt="cart icon" />
       {totalItems}
     </span>
   );

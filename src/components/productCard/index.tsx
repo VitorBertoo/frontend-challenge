@@ -43,7 +43,7 @@ export default function ProductCard({
           });
         }}
       >
-        <Image priority src={bagIcon} alt="cart icon" /> COMPRAR
+        <Image src={bagIcon} alt="cart icon" /> COMPRAR
       </button>
     </div>
   );

@@ -30,3 +30,11 @@ $ npm run dev
 ```
 NEXT_PUBLIC_BASE_URL=https://link-da-api.com
 ```
+
+## Testando a aplicação
+
+Testar é bem simples, caso, queira saber se os componentes estão funcionando corretamente simplesmente utilize o comando
+
+```
+npm run test
+```
