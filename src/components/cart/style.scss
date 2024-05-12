@@ -78,7 +78,10 @@
     background-color: $black800;
     outline: none;
     border: none;
+    cursor: pointer;
 
     color: $primaryText;
+    font-size: 28px;
+    font-weight: 700;
   }
 }
