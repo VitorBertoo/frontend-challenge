@@ -1,4 +1,5 @@
 import { useCartContext } from '@/context/cartContext';
+import { motion, AnimatePresence } from 'framer-motion';
 import './style.scss';
 import CartItem from '../cartItem';
 
@@ -7,12 +8,35 @@ export function Cart() {
 
   let cartTotal = 0;
 
+  const containerAnimationSetting = {
+    visible: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        x: { velocity: 100 },
+        duration: 0.3,
+      },
+    },
+    hidden: {
+      x: 500,
+      opacity: 0,
+      transition: {
+        x: { velocity: 100 },
+        duration: 0.3,
+      },
+    },
+  };
+
   cartItems.forEach(item => {
     cartTotal += item.count * item.price;
   });
 
   return (
-    <div className={`cart-container ${!isOpen && 'hidden'}`}>
+    <motion.div
+      className={`cart-container`}
+      animate={isOpen ? 'visible' : 'hidden'}
+      variants={containerAnimationSetting}
+    >
       <div className="cart-body">
         <div className="cart-header">
           <span>Carrinho de compras</span>
@@ -40,6 +64,6 @@ export function Cart() {
         </div>
       </div>
       <button className="finish-order">Finalizar Compra</button>
-    </div>
+    </motion.div>
   );
 }

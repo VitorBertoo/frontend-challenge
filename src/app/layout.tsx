@@ -25,8 +25,8 @@ export default function RootLayout({
         <body className={inter.className}>
           <Header />
           <ReactQueryClientProvider>{children}</ReactQueryClientProvider>
+          <Footer />
         </body>
-        <Footer />
       </CartContextWrapper>
     </html>
   );
