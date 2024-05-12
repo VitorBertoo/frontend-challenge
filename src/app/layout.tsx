@@ -5,6 +5,7 @@ import { Inter } from 'next/font/google';
 import { ReactQueryClientProvider } from '@/lib/reactQueryProvider';
 import Header from '@/components/header';
 import CartContextWrapper from '@/context/cartContext';
+import Footer from '@/components/footer';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -25,6 +26,7 @@ export default function RootLayout({
           <Header />
           <ReactQueryClientProvider>{children}</ReactQueryClientProvider>
         </body>
+        <Footer />
       </CartContextWrapper>
     </html>
   );

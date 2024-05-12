@@ -10,6 +10,11 @@ body {
   font-size: 18px;
 }
 
+html {
+  position: relative;
+  height: 100vh;
+}
+
 main {
   margin-top: $headerHeight;
   display: flex;
